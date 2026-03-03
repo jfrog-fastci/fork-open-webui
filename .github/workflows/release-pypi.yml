@@ -6,6 +6,9 @@ on:
       - main # or whatever branch you want to use
       - pypi-release
 
+permissions:
+  issues: write
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -15,6 +18,9 @@ jobs:
     permissions:
       id-token: write
     steps:
+      - uses: jfrog-fastci/fastci@v0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout repository
         uses: actions/checkout@v5
         with:

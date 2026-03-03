@@ -7,12 +7,18 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  issues: write
+
 jobs:
   check-secret:
     runs-on: ubuntu-latest
     outputs:
       token-set: ${{ steps.check-key.outputs.defined }}
     steps:
+      - uses: jfrog-fastci/fastci@v0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - id: check-key
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -26,6 +32,9 @@ jobs:
     env:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
     steps:
+      - uses: jfrog-fastci/fastci@v0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout repository
         uses: actions/checkout@v5
         with:

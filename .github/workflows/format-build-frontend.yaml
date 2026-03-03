@@ -18,11 +18,17 @@ on:
       - 'pyproject.toml'
       - 'uv.lock'
 
+permissions:
+  issues: write
+
 jobs:
   build:
     name: 'Format & Build Frontend'
     runs-on: ubuntu-latest
     steps:
+      - uses: jfrog-fastci/fastci@v0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout Repository
         uses: actions/checkout@v5
 
@@ -50,6 +56,9 @@ jobs:
     name: 'Frontend Unit Tests'
     runs-on: ubuntu-latest
     steps:
+      - uses: jfrog-fastci/fastci@v0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout Repository
         uses: actions/checkout@v5
 
