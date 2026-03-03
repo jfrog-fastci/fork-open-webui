@@ -16,7 +16,7 @@ jobs:
     outputs:
       token-set: ${{ steps.check-key.outputs.defined }}
     steps:
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -33,7 +33,7 @@ jobs:
     env:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
     steps:
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'

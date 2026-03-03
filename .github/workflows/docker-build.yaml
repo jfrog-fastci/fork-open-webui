@@ -34,7 +34,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -139,7 +139,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -250,7 +250,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -362,7 +362,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -470,7 +470,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -566,7 +566,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -624,7 +624,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -684,7 +684,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -744,7 +744,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -804,7 +804,7 @@ jobs:
     steps:
       # GitHub Packages requires the entire repository name to be in lowercase
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
@@ -879,7 +879,7 @@ jobs:
           - variant: slim
             suffix: "-slim"
     steps:
-      - uses: jfrog-fastci/fastci@v0
+      - uses: jfrog-fastci/fastci@milestone-check-for-accept-terms-on-current-branch-305ce85e-3216
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           accept_terms: 'yes'
