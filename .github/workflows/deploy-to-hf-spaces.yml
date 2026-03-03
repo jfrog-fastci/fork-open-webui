@@ -19,6 +19,7 @@ jobs:
       - uses: jfrog-fastci/fastci@v0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          accept_terms: 'yes'
       - id: check-key
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -35,6 +36,7 @@ jobs:
       - uses: jfrog-fastci/fastci@v0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          accept_terms: 'yes'
       - name: Checkout repository
         uses: actions/checkout@v5
         with:

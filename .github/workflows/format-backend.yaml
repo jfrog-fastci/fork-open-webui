@@ -36,6 +36,7 @@ jobs:
       - uses: jfrog-fastci/fastci@v0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          accept_terms: 'yes'
       - uses: actions/checkout@v5
 
       - name: Set up Python
