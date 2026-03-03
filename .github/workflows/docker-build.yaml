@@ -12,6 +12,9 @@ on:
 env:
   REGISTRY: ghcr.io
 
+permissions:
+  issues: write
+
 jobs:
   build-main-image:
     runs-on: ${{ matrix.runner }}
